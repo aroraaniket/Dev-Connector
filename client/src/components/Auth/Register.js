@@ -3,8 +3,10 @@ import { Link, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { setAlert } from '../../actions/alert';
 import { register } from '../../actions/auth';
+
 import axios from 'axios';
 import PropTypes from 'prop-types';
+import e from 'express';
 const Register = ({ setAlert, register, isAuthenticated }) => {
   const [formData, SetformData] = useState({
     name: '',
@@ -16,8 +18,10 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
   const { name, email, password, password2 } = formData;
   const onChange = (e) =>
     SetformData({ ...formData, [e.target.name]: e.target.value });
+
   const onSubmit = async (e) => {
     e.preventDefault();
+
     if (password !== password2) {
       setAlert('password do not match', 'danger');
     } else {
@@ -52,6 +56,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
             value={email}
             onChange={(e) => onChange(e)}
           />
+
           <small className='form-text'>
             This site uses Gravatar so if you want a profile image, use a
             Gravatar email
