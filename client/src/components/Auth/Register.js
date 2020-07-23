@@ -4,9 +4,8 @@ import { connect } from 'react-redux';
 import { setAlert } from '../../actions/alert';
 import { register } from '../../actions/auth';
 
-import axios from 'axios';
 import PropTypes from 'prop-types';
-import e from 'express';
+
 const Register = ({ setAlert, register, isAuthenticated }) => {
   const [formData, SetformData] = useState({
     name: '',
