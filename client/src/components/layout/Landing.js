@@ -9,6 +9,7 @@ const Landing = ({ isAuthenticated }) => {
   }
   return (
     <section className='landing'>
+  
       <div className='dark-overlay'>
         <div className='landing-inner'>
           <h1 className='x-large'>Developer Connector</h1>
@@ -24,9 +25,17 @@ const Landing = ({ isAuthenticated }) => {
               Login
             </Link>
           </div>
+
+        
         </div>
+        <footer className="landing-footer"> 
+     <p>copyright © 2020 Aniket Arora</p> 
+      </footer>
+        
       </div>
+     
     </section>
+   
   );
 };
 Landing.propTypes = {
