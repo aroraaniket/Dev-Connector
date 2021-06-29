@@ -22,7 +22,7 @@ router.post(
       min: 6,
     }),
   ],
-  async function (req, res) {
+  async (req, res) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       return res.status(400).json({ errors: errors.array() });
@@ -60,7 +60,7 @@ router.post(
       jwt.sign(
         payload,
         config.get('jwtSecret'),
-        { expiresIn: '1800s' },
+        { expiresIn: '18s' },
         function (err, token) {
           if (err) {
             throw err;

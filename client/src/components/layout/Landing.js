@@ -25,7 +25,7 @@ const Landing = ({ isAuthenticated }) => {
               Login
             </Link>
           </div>
-
+ 
         
         </div>
         <footer className="landing-footer"> 

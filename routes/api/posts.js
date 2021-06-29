@@ -101,7 +101,7 @@ router.put('/like/:id', auth, async function (req, res) {
       return res.status(400).json({ msg: 'Post already liked' });
     }
     post.likes.unshift({ user: req.user.id });
-    await post.save();
+    await post.save(); 
     res.json(post.likes);
   } catch (err) {
     console.error(err.message);

@@ -24,7 +24,7 @@ const PostSchema = new Schema({
         ref: 'user',
       },
     },
-  ],
+  ], 
   comments: [
     {
       user: {
