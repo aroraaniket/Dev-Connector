@@ -29,7 +29,7 @@ const Landing = ({ isAuthenticated }) => {
         
         </div>
         <footer className="landing-footer"> 
-     <p>copyright © 2020 Aniket Arora</p> 
+     <p>copyright © 2020 </p> 
       </footer>
         
       </div>
