@@ -33,6 +33,23 @@ ul {
 img {
   width: 100%;
 }
+.opp {
+  overflow: hidden;
+}
+.foot {
+  color: #8f949c;
+  height: 7vh;
+  margin-top: 5px;
+  background: #1b242f;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer {
+  background-color: #1b242f;
+  height: 3vh;
+}
 
 /* Utilities */
 .container {
@@ -225,6 +242,7 @@ img {
 }
 
 /* Overlay */
+
 .dark-overlay {
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;

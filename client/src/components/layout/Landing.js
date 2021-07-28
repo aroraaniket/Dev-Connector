@@ -8,25 +8,34 @@ const Landing = ({ isAuthenticated }) => {
     return <Redirect to='/dashboard' />;
   }
   return (
-    <section className='landing'>
-      <div className='dark-overlay'>
-        <div className='landing-inner'>
-          <h1 className='x-large'>Developer Connector</h1>
-          <p className='lead'>
-            Create a developer profile/portfolio, share posts and get help from
-            other developers
-          </p>
-          <div className='buttons'>
-            <Link to='./register' className='btn btn-primary'>
-              Sign Up
-            </Link>
-            <Link to='./login' className='btn btn-light'>
-              Login
-            </Link>
+    <div className='opp'>
+      <section className='landing'>
+        <div className='dark-overlay'>
+          <div className='landing-inner'>
+            <h1 className='x-large'>Developer Connector</h1>
+            <p className='lead'>
+              Create a developer profile/portfolio, share posts and get help
+              from other developers
+            </p>
+            <div className='buttons'>
+              <Link to='./register' className='btn btn-primary'>
+                Sign Up
+              </Link>
+              <Link to='./login' className='btn btn-light'>
+                Login
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <section className='footer'>
+        <div class='foot'>
+          <p>
+            ANIKET ARORA <span class='highlight'>©2020</span>
+          </p>
+        </div>
+      </section>
+    </div>
   );
 };
 Landing.propTypes = {

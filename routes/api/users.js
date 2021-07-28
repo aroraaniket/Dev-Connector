@@ -58,7 +58,7 @@ router.post(
         },
       };
       jwt.sign(
-        payload,
+        payload, 
         config.get('jwtSecret'),
         { expiresIn: '1800s' },
         function (err, token) {
